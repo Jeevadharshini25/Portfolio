@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Jeevadharshini V</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      background-color: #0a192f;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: white;
+      font-size: 20px;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #64ffda;
+    }
+
+    /* Page heading */
+    .page-heading {
+      background-color: #0a192f;
+      color: #64ffda;
+      padding: 15px 15px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      animation: fadeInDown 1s ease;
+    }
+
+    /* Projects section */
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .project-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      animation: fadeInUp 1s ease;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .project-card img {
+      width: 40%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .project-content {
+      width: 60%;
+    }
+    .project-content h2 {
+      margin-top: 0;
+      color: #0a192f;
+    }
+    .project-content p, 
+    .project-content li {
+      line-height: 1.6;
+    }
+    .team {
+      font-style: italic;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    /* Reverse layout for alternating style */
+    .project-card.reverse {
+      flex-direction: row-reverse;
+    }
+
+    /* Extra contents section */
+    .extra-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeInUp 1s ease;
+    }
+    .extra-section h2 {
+      color: #0a192f;
+      margin-bottom: 15px;
+    }
+    .extra-section p {
+      line-height: 1.7;
+      color: #444;
+    }
+    .extra-section ul {
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0a192f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>Jeevadharshini V</h1>
+    <nav>
+      <a href="portfolio.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Heading -->
+  
+
+  <!-- Projects -->
+  <section class="projects">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="C:\\Users\\Jeeva dharshini\\OneDrive\\Pictures\\Screenshots 1\\Screenshot 2025-08-16 000016.png" alt="IoT Based Smart Traffic Management System">
+      <div class="project-content">
+        <h2>GEN E TRIX Hackathon - St Joseph College of Engineering, Chennai</h2>
+        <ul>
+          <li>Developed an <strong>IoT-Based Smart Traffic Management System</strong> to reduce congestion and optimize traffic flow using real-time sensor data.</li>
+          <li>Selected for the <strong>Finals</strong> but unfortunately could not attend.</li>
+          <li>My contributions included system architecture design, IoT hardware setup, and integration with a real-time monitoring dashboard.</li>
+        </ul>
+        <h3 class="team">
+          Team: Lunatic Byte — Jeevadharshini V, Kavibharathi B, Kanishka T, Shailaja M
+        </h3>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card reverse">
+      <img src="C:\\Users\\Jeeva dharshini\\OneDrive\\Pictures\\Screenshots 1\\Screenshot 2025-08-16 000037.png" alt="Elephant Movement Tracking">
+      <div class="project-content">
+        <h2>Human-Animal Conflict Hackathon - Ramakrishna Engineering College, Coimbatore</h2>
+        <ul>
+          <li>Created <strong>tools to monitor and track elephant movements</strong> to prevent human-elephant conflicts, using GPS tracking and AI-based pattern recognition.</li>
+          <li>Selected as <strong>Semifinalist</strong> and provided an online presentation.</li>
+          <li>My work focused on data analysis, AI model training, and building a user-friendly alert system for forest officers.</li>
+        </ul>
+        <h3 class="team">
+          Team: Lunatic Byte — Jeevadharshini V, Kavibharathi B, Kanishka T, Shailaja M
+        </h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extra Section Below Projects -->
+  <section class="extra-section">
+    <h2>What I Learned from These Projects</h2>
+    <p>
+      Working on these hackathons has helped me gain practical experience in teamwork, problem-solving, and 
+      applying technical knowledge to real-world challenges. I learned how to collaborate effectively under 
+      time pressure and implement solutions that can make a positive impact.
+    </p>
+    <ul>
+      <li>Improved my skills in IoT hardware and dashboard integration.</li>
+      <li>Strengthened my knowledge in AI and data analysis.</li>
+      <li>Learned how to present ideas effectively to judges and stakeholders.</li>
+      <li>Enhanced collaboration, leadership, and adaptability skills.</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Jeevadharshini V | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
